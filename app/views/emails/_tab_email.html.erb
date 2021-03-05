@@ -1,0 +1,17 @@
+<table class="table">
+    <thead>
+      <tr>
+      
+     </tr>
+    </thead>
+    <tbody>
+  <% @email.each do |event| %>
+      <th scope="row"></th>
+      <td><%= event.object %></td>
+      
+      <td><%= event.body %></td>
+        <td><%= button_to 'supprimer', {} %></td>
+        <td><%= button_to 'marquer non lu', {} %></td>
+    </tbody>
+  <% end %>
+</table>
